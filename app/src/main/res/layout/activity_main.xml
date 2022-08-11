@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00935555"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vs" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="65dp"
+        app:srcCompat="@drawable/tengen" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="#19FFFFFF"
+        android:text=":الرجاء ادخال البيانات التالية"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="395dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="321dp"
+        android:background="@color/white"
+        android:hint="أكتب اسمك"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtname2"
+        android:layout_width="395dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txtname"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="-270dp"
+        android:layout_marginEnd="13dp"
+        android:background="@color/white"
+        android:hint="أكتب عمرك"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="185dp"
+        android:layout_height="68dp"
+        android:layout_alignStart="@+id/txtname2"
+        android:layout_alignBottom="@+id/txtname2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="-126dp"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+
+</RelativeLayout>
